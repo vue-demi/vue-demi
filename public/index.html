@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,user-scalable=0"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="rem" content="design-width=750,max-width=480" />
+    <title>vue-demi-cli</title>
+    <!-- 基础库 -->
+    <script src="//s.thsi.cn/cb?js/m/v2.13/common/;user.js;cookie.js;basic.js;bridge.js;rem.js"></script>
+    <!-- hxmUI样式库 -->
+    <link rel="stylesheet" href="//s.thsi.cn/sns/lib/front/thsc-theme/ths-theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="//s.thsi.cn/cd/ths-frontend-hxmui-container/front/thsc-hxmui/1.11.2/style/index.css"
     />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
+      <strong>很抱歉当前环境不支持 JavaScript 导致程序无法运行</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- 基础库 -->
+    <script src="//s.thsi.cn/cd/ths-frontend-common-lib-container/v1.2.6/business/stat.js"></script>
+    <script src="//s.thsi.cn/cd/ths-frontend-infra-jssdk-pod/1.0.5/thsc-base-jssdk.js"></script>
     <!-- iphoneX 适配 -->
-    <script src="//s.thsi.cn/cb?cd/ths-frontend-common-lib-container/v1.2.6/business/thsIphoneXAdapter.js"></script>
-    <script src="//s.thsi.cn/cb?sns/lib/front/thsc-theme/ths-theme.min.js"></script>
+    <script src="//s.thsi.cn/cd/ths-frontend-common-lib-container/v1.2.6/business/thsIphoneXAdapter.js"></script>
+    <!-- vue -->
+    <script src="//s.thsi.cn/cd/ths-frontend-common-lib-container/v1.3.1/common/vue/2.6.14.min.js"></script>
+    <!-- hxmUI样式库 -->
+    <script src="//s.thsi.cn/sns/lib/front/thsc-theme/ths-theme.min.js"></script>
+    <script src="//s.thsi.cn/cd/ths-frontend-hxmui-container/front/thsc-hxmui/1.11.2/index.js"></script>
   </body>
 </html>
