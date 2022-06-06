@@ -11,7 +11,7 @@ const envHost: Record<string, string> = {
   //对应正式环境主域名
   release: '',
 };
-const BASE_URL_API = envHost[process.env.VUE_APP_CURRENTMODE];
+const BASE_URL_API = envHost[process.env.VUE_APP_CURRENTMODE || 'release'];
 
 // 相同域名接口申明(自动拼接域名前缀)
 const interfaceApi: Record<string, string> = {
@@ -37,7 +37,7 @@ export default {
   api: {
     ...interfaceApi,
     // 其余域名自行填充
-    ...diffHostInterface[process.env.VUE_APP_CURRENTMODE],
+    ...diffHostInterface[process.env.VUE_APP_CURRENTMODE || 'release'],
   },
 
   url: {

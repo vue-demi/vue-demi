@@ -172,7 +172,7 @@ function jumpToFenShi(stockCode: string, marketId: string) {
 
 //消抖
 function debounce(fn: { apply: (arg0: any, arg1: IArguments) => void }, delay: number | undefined) {
-  let timer: number | null | undefined = null;
+  let timer: string | number | NodeJS.Timeout | null | undefined = null;
   return function () {
     const args = arguments;
     // @ts-ignore
